@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+
+body{
+    background-image: url(main_bg7.jpg);
+    background-size: cover;
+    background-position: center;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.container{
+background-color: rgba(0, 0, 0, 0.6);
+  width: 700px;
+  margin: 0 28px;
+  border-radius: 10px;
+  padding: 28px;
+  border: 0;
+  box-shadow: inset -2px 2px 2px #dcdcdc;
+}
+
+.avi-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.avi-ti{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: #fafafa;
+    text-shadow: 2px 2px 2px #101010;
+    border-bottom: solid 1px #9b9b9b;
+}
+ 
+.tot{
+
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+
+
+.text {
+   padding-bottom: 15px;
+   width: 48%;
+}
+
+.E-text{
+ width: 100%;
+  padding-bottom: 15px;
+
+}
+
+.text label ,
+ .E-text label{
+    color: white;
+    display:block ;
+    font-size: 2rem ;
+    font-weight: 400;
+    margin: 2px 0;
+}
+
+
+ .text input,
+.text select,
+ .E-text input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  height: 40px;
+  appearance: none;
+ }
+
+ .register-btn {
+  width: 100%;
+}
+
+
+ .register-btn input{
+   
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: rgba(77, 77, 248, 0.7);
+    padding:10px;
+    border: 0;
+    border-radius:4px ;
+    margin: 10px 0 0 0;
+    font-size: 2rem;
+ }
+
+ .register-btn input:hover{
+   background-color:  rgba(0, 0, 168, 1);
+    transition: 300ms;
+    cursor: pointer;
+
+ }
+
+ @media (max-width: 700px) {
+  .avi-logo, .container {
+    min-width: 300px;
+  }
+  .text {
+    width: 100%;
+  }
+  .tot{
+    max-height: 380px;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+}
+
+@media (max-width: 415px) {
+  .avi-logo {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 375px) {
+  .avi-logo {
+    min-width: 200px;
+  }
+  html {
+    font-size: 8px;
+  }
+}
