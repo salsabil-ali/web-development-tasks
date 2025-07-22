@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4 </title>
+</head>
+<style>
+    *{
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+div{
+    margin: 10px;
+}
+body{
+    background-color: #2C2C2C;
+}
+.main{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 200px;
+
+}
+
+  .calculator-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: #3A3A3A;
+    cursor: pointer;
+  }
+  
+  .operation {
+    background-color: #4D4D4D;
+  }
+
+  .equal {
+    background-color: #F08A24;
+    cursor:pointer;
+  }
+
+
+</style>
+<body>
+  
+ <div class="main">        
+ <div>
+    <button class="calculator-btn" onclick="
+        counting += '1';
+        console.log(`${counting}`);
+    ">1</button>
+    <button  class="calculator-btn" onclick="
+        counting += '2';
+        console.log(`${counting}`);
+    ">2</button>
+    <button class="calculator-btn" onclick="
+        counting += '3';
+        console.log(`${counting}`);
+    ">3</button>
+    <button class="calculator-btn operation" onclick="
+        counting += ' + ';
+        console.log(`${counting}`);
+    ">+</button>  
+</div>
+
+<div>
+    <button class="calculator-btn" onclick="
+        counting += '4';
+        console.log(`${counting}`);
+    ">4</button>
+    <button class="calculator-btn" onclick="
+        counting += '5';
+        console.log(`${counting}`);
+    ">5</button>
+    <button class="calculator-btn" onclick="
+        counting += '6';
+        console.log(`${counting}`);
+    ">6</button>
+    <button class="calculator-btn operation" onclick="
+        counting += ' - ';
+        console.log(`${counting}`);
+    ">-</button>
+</div>
+
+<div>
+    <button class="calculator-btn" onclick="
+        counting += '7';
+        console.log(`${counting}`);
+    ">7</button>
+    <button class="calculator-btn" onclick="
+        counting += '8';
+        console.log(`${counting}`);
+    ">8</button>
+    <button class="calculator-btn" onclick="
+        counting += '9';
+        console.log(`${counting}`);
+    ">9</button>
+    <button class="calculator-btn operation" onclick="
+        counting += ' * ';
+        console.log(`${counting}`);
+    ">x</button>
+</div>
+
+<div>
+    <button class="calculator-btn" onclick="
+        counting += '0';
+        console.log(`${counting}`);
+    ">0</button>
+    <button class="calculator-btn equal" onclick="
+        counting = eval(counting);
+        console.log(`${counting}`);
+    "> = </button>
+    <button  class="calculator-btn" onclick="
+        counting = '';
+        console.log(`${counting}`);
+    "> Clear </button>
+
+</div> 
+</div> 
+<script>
+ let counting = '';
+</script>
+
+
+
+    
+</body>
+</html>
