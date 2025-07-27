@@ -1,8 +1,9 @@
  *{
-    font-family:sans-serif;  
+    font-family:sans-serif; 
+     
     }
 div{
-    margin: 10px;
+  /*margin: 10px;*/
 }
 body {
   font-family: Arial;
@@ -35,4 +36,5 @@ body {
    color: white;
   font-size: 40px;
   width: 100%;
+  margin: 40px;
   }
