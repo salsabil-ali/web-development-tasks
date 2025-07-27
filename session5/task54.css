@@ -1,6 +1,5 @@
  *{
-        font-family: 'Times New Roman', Times, serif;
-        
+    font-family:sans-serif;        
     }
 div{
     margin: 10px;
@@ -34,7 +33,4 @@ body{
   .js-calculation{
    color: white;
   font-size: 40px;
-  display: flex;
-  flex-direction: column;
-  
   }
