@@ -30,7 +30,7 @@ header {
     left: 0;
     /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
     margin-top: 0px;
-    padding:64px 144px 0 144px;
+    padding:25px;
    
 }
 
@@ -173,6 +173,10 @@ header {
     justify-content: center;
     padding: 0 9%;
 }
+.container-about{
+    padding:10px 30px;
+    max-width:600px;
+}
 
 .About-image {
   width: 300px;
@@ -219,6 +223,7 @@ header {
     margin-bottom: 1rem;
 }
 .about-inner {
+    margin-top: 25px;
     font-size: 15px;
     color:#333;
 }
@@ -308,6 +313,7 @@ header {
 
 .project-card img {
     width: 200px;
+    height: 40vh;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -363,13 +369,14 @@ header {
     padding:20px;
    border-radius: 20px;
   border: 1px solid rgb(6, 6, 6);
-  width: 500px;
+  max-width: 500px;
     margin: 0 auto;
 }
 .contact-info a {
      text-decoration: none;
     color: #000000;
     font-weight: 500;
+   
     transition: color 0.3s;
 }
 .contact-info a:hover{
@@ -379,6 +386,11 @@ header {
 
 .contact-info img {
     width: 30px;
+}
+.contact-info div{
+   justify-content: center;
+   align-items: center;
+    text-align: center;
 }
 
 .contact-form {
@@ -406,8 +418,10 @@ header {
 ========================= */
 footer {
     
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-size: 15px;
+   
     
 }
 
@@ -417,6 +431,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin-bottom: 20px;
 
 }
@@ -471,17 +486,11 @@ footer {
     z-index: 1000;
   }
 
-  .nav-links.active { display: flex; }
-
-
-   
-
-    footer{
-     font-size: smaller;
-    }
+  .nav-links.active { display: flex; 
+}
 
      .projectcontainer{
-        flex-direction: column;
+       flex-wrap: wrap;
         align-items: center;
         margin-bottom: 0;
 
@@ -490,7 +499,7 @@ footer {
     .hero {
         flex-direction: column;
         justify-content: center;
-        align-self: center;
+        align-items: center;
         gap:10px;
         padding-top: 0;
         margin-top: 0;
@@ -499,7 +508,7 @@ footer {
     .about {
        flex-direction: column;
         justify-content: center;
-        align-self: center;
+        align-items: center;
         gap:10px;
         padding-top: 0;
         margin-top: 0;
@@ -538,6 +547,10 @@ footer {
         width: 250px;
         margin-top: 0;
     }
+    .footer{
+        font-size: 10px;
+    }
+
 
 }
 
@@ -572,6 +585,12 @@ footer {
 
       flex-direction: column;
 
+    }
+    
+}
+@media (max-width: 375px) {
+    .footer{
+       font-size: 5px;
     }
 }
 
